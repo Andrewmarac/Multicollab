@@ -7,12 +7,12 @@ const config = {
     server: "213.140.22.237",  //Stringa di connessione
     database: 'MARASIGAN.JOSHUA', //(Nome del DB)
     options: {
-                trustServerCertificate: true,
+            trustServerCertificate: true,
 
   },
 }
 
-module.exports = class Sqlcon {
+module.exports = class Sqlreq {
 
     static connect(res, connectedCallback)
     {
@@ -26,12 +26,26 @@ module.exports = class Sqlcon {
         let sqlRequest = new sql.Request();  //sqlRequest: oggetto che serve a eseguire le query
         let q = 'select * from Influencer';
         //eseguo la query e aspetto il risultato nella callback
-        sqlRequest.query(q, (err, result) => {Sqlcon.sendQueryResults(err,result,res)}); 
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendQueryResults(err,result,res)}); 
     }
     
   static sendQueryResults(err,result, res)
     {
-        if (err) console.log(err); // ... error checks
-        res.send(result.recordset);  //Invio il risultato al Browser
+        if (err) console.log(err); 
+        res.send(result.recordset);  
+    }
+
+    static makeAziendaRequest(req,res) {
+        let sqlRequest = new sql.Request();  //sqlRequest: oggetto che serve a eseguire le query
+        let q = `select * from Azienda`;
+        //eseguo la query e aspetto il risultato nella callback
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendAziendaResult(err,result,res)}); 
+    }
+
+
+    static sendAziendaResult(err,result, res)
+    {
+            if (err) console.log(err); // ... error checks
+            res.send(result.recordset);  //Invio il risultato al Browser
     }
 }
