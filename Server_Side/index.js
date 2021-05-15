@@ -10,8 +10,7 @@ app.get('/Influencer', function (req, res) {
 });
 
 app.get('/Azienda', function (req, res) {
-    console.log(req.params.foglio);
-    sqlreq.connect(req, res, sqlreq.makeAziendaRequest);
+    sqlreq.connect(res, sqlreq.makeAziendaRequest);
  });
 
 app.listen(3000, function () {

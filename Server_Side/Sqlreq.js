@@ -35,9 +35,9 @@ module.exports = class Sqlreq {
         res.send(result.recordset);  
     }
 
-    static makeAziendaRequest(req,res) {
+    static makeAziendaRequest(res) {
         let sqlRequest = new sql.Request();  //sqlRequest: oggetto che serve a eseguire le query
-        let q = `select * from Azienda`;
+        let q = 'select * from Azienda';
         //eseguo la query e aspetto il risultato nella callback
         sqlRequest.query(q, (err, result) => {Sqlreq.sendAziendaResult(err,result,res)}); 
     }
