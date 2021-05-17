@@ -1,0 +1,7 @@
+<input type="submit" class="btn btn-info" (click)="submit()" value="Submit Button">
+<div *ngIf="results">
+  <div *ngFor="let r of results">
+    {{r.Screen_Name}}
+  </div>
+</div>
+

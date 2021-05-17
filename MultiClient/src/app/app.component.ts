@@ -9,14 +9,4 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'MultiClient';
 
-  obsdata!: Observable<Object>;
-  results: any;
-  constructor(public dataservice: DataService) {}
-
-  submit(): void {
-
-    this.obsdata = this.dataservice.displayInf();
-    this.obsdata.subscribe((data) => this.results = data);
-  }
-
 }

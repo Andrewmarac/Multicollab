@@ -10,7 +10,7 @@ export class DataService {
   constructor(private http: HttpClient) { }
 
   displayInf() {
-    const url = `https://3000-ivory-deer-64vzeloi.ws-eu04.gitpod.io/Azienda`;
+    const url = `https://3000-tan-rook-rswq8hwx.ws-eu04.gitpod.io/Influencer`;
     let obsdata = this.http.get(url);
     return obsdata;
   }
