@@ -48,4 +48,33 @@ module.exports = class Sqlreq {
             if (err) console.log(err); // ... error checks
             res.send(result.recordset);  //Invio il risultato al Browser
     }
+/*
+    static makeAziendaRequest(res) {
+        let sqlRequest = new sql.Request();  //sqlRequest: oggetto che serve a eseguire le query
+        let q = 'select * from Azienda';
+        //eseguo la query e aspetto il risultato nella callback
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendAziendaResult(err,result,res)}); 
+    }
+
+
+    static sendAziendaResult(err,result, res)
+    {
+            if (err) console.log(err); // ... error checks
+            res.send(result.recordset);  //Invio il risultato al Browser
+    }
+    */
+    static InfluencerCategory(req,res) {
+        let sqlRequest = new sql.Request();  //sqlRequest: oggetto che serve a eseguire le query
+        let foglio = req.params.foglio; //ottengo il foglio passato come parametro dall'url
+        let q = `SELECT * from Influencer WHERE Category_ = ${foglio}`
+        //eseguo la query e aspetto il risultato nella callback
+        sqlRequest.query(q, (err, result) => {SqlUtils.sendInfleuncerResult(err,result,res)}); 
+    }
+      static sendInfluencerResult(err,result, res)
+    {
+            if (err) console.log(err); // ... error checks
+            res.send(result.recordset);  //Invio il risultato al Browser
+    }
+
+
 }
