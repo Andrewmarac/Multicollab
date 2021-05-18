@@ -14,4 +14,11 @@ export class DataService {
     let obsdata = this.http.get(url);
     return obsdata;
   }
+
+   selectCategorise(query: string) {
+    const url = `https://3000-white-sailfish-1v1yd0i4.ws-eu04.gitpod.io/${query}`;
+
+    let obsdata = this.http.get(url);
+    return obsdata;
+  }
 }

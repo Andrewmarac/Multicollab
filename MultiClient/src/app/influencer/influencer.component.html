@@ -1,12 +1,29 @@
 <div class="grid-container">
   <div class="Sport">
     <h1>Sport🎳</h1>
-    <p>#Football #Basketball #Golf #Racing #Soccer #Tennis </p>
-    <a href="#" class="fill-div"></a>
+    <p id="tags">#Football #Basketball #Golf #Racing #Soccer #Tennis </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, iste.</p>
+
+    <button (click)="selcateg('Sport')">Search</button>
+
+    <div *ngIf="results">
+      <div *ngFor="let r of results">
+        {{r.Screen_Name}}
+      </div>
+    </div>
+
   </div>
   <div class="Art">
     <h1>Art🌈</h1>
     <p>#Design  #Architecture  #Illustrator  #Drawing  #Draw #Colors </p>
+
+    <button (click)="selcateg('Art')">Search</button>
+
+    <div *ngIf="results">
+      <div *ngFor="let r of results">
+        {{r.Name}}
+      </div>
+    </div>
   </div>
   <div class="Music">
     <h1>Music🎵</h1>

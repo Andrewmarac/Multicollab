@@ -1,6 +1,6 @@
 .grid-container{
   display: grid;
-  grid-template-columns:65% 35%;
+  grid-template-columns:70% 30%;
   grid-template-rows:5% 90% 5%;
   height: 1000px;
 }
