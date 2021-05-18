@@ -1,6 +1,6 @@
 .grid-container{
   display: grid;
-  grid-template-columns:60% 40%;
+  grid-template-columns:65% 35%;
   grid-template-rows:5% 90% 5%;
   height: 1000px;
 }
@@ -31,7 +31,7 @@
 .Intro{
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: rgb(255, 255, 255);
+  background-color: #f6f6f6;
   padding: 50px;
 }
 
