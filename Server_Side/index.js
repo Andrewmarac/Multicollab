@@ -5,12 +5,16 @@ app.use(new cors());
 
 const sqlreq = require('./Sqlreq.js'); 
 
-app.get('/Influencer', function (req, res) {
-   sqlreq.connect(res, sqlreq.makeSqlRequest);
+app.get('/', function (req, res) {
+   sqlreq.connect(req, res, sqlreq.makeSqlRequest);
 });
 
 app.get('/Azienda', function (req, res) {
-    sqlreq.connect(res, sqlreq.makeAziendaRequest);
+    sqlreq.connect(req, res, sqlreq.makeAziendaRequest);
+ });
+
+app.get('/Location_/:Category_', function (req, res) {
+    sqlreq.connect(req, res, sqlreq.ciVettRequest);
  });
 
 app.listen(3000, function () {
