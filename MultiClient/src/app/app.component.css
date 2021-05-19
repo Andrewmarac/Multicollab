@@ -53,27 +53,33 @@
 .Inf-section{
   grid-column: 1/2;
   grid-row: 1/2;
-  background-color: #BFD7ED;
+  background-color: #0beef9;
+  background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
   padding: 20px;
   border-radius: 25px;
 }
+.Inf-section h1{
+  color: rgb(255, 255, 255);
+}
 .Inf-section p{
   font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 .Inf-section button{
   background-color: #008CBA;
 }
 .Inf-section a{
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 20px;
 }
-.Az-section{
+.brand-section{
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: #63a4ff;
-  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+  background-color: #0beef9;
+  background-image: linear-gradient(315deg, #0beef9 0%, #48a9fe 74%);
   padding: 20px;
   border-radius: 25px;
+  color: azure;
 
 }
 

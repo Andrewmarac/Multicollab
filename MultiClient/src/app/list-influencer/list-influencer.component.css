@@ -10,9 +10,15 @@
   display: flex;
   justify-content: space-around;
 }
-
+.mother-div h3{
+  font-size: 25px;
+}
+.mother-div p{
+  font-size: 15px;
+}
 .Profileb{
   width: 30%;
   background-color: #008CBA;
   color: aliceblue;
+  font-size: 15px;
 }

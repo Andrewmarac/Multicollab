@@ -9,8 +9,6 @@ import { Observable } from 'rxjs';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent{
-  private sport = 'Sport';
-  private art = 'Art';
   constructor(public dataservice: DataService) {}
 
 

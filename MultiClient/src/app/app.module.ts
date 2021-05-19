@@ -3,21 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InfluencerComponent } from './influencer/influencer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 import { CategoryComponent } from './category/category.component';
 import { AssistenzaComponent } from './assistenza/assistenza.component';
 import { ListInfluencerComponent } from './list-influencer/list-influencer.component';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    InfluencerComponent,
     AboutComponent,
     CategoryComponent,
     AssistenzaComponent,
-    ListInfluencerComponent
+    ListInfluencerComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
