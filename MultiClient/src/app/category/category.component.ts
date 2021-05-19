@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class CategoryComponent{
 
-    obsdata!: Observable<Object>;
+  obsdata!: Observable<Object>;
   results: any;
   constructor(public dataservice: DataService) {}
 
