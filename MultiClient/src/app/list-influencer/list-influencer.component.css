@@ -1,3 +1,7 @@
 .card{
   border-style: solid;
+  padding: 20px;
+  margin: 10px;
+  width: 50%;
+  text-align: center;
 }
