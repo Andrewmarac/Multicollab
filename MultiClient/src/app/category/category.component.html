@@ -4,7 +4,7 @@
     <p id="tags">#Football #Basketball #Golf #Racing #Soccer #Tennis </p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, iste.</p>
 
-    <button (click)="selcateg('Sport')">Search</button>
+    <button (click)="getCategory('Sport')">Search</button>
 
     <div *ngIf="results">
       <div *ngFor="let r of results">
@@ -17,7 +17,7 @@
     <h1>Art🌈</h1>
     <p>#Design  #Architecture  #Illustrator  #Drawing  #Draw #Colors </p>
 
-    <button (click)="selcateg('Art')">Search</button>
+    <button (click)="getCategory('Art')">Search</button>
 
     <div *ngIf="results">
       <div *ngFor="let r of results">

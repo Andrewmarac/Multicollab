@@ -10,19 +10,20 @@ import { Observable } from 'rxjs';
 })
 export class CategoryComponent{
 
-  obsdata!: Observable<Object>;
   results: any;
   constructor(public dataservice: DataService) {}
 
-  submit(): void {
 
-    this.obsdata = this.dataservice.displayInf();
-    this.obsdata.subscribe((data) => this.results = data);
+  displayInfluencer():void{
+    this.dataservice.getInfluencer().subscribe((data)=>{
+      this.results=data;
+    })
   }
 
-  selcateg(query:string):void{
-    this.obsdata = this.dataservice.selectCategorise(query);
-    this.obsdata.subscribe((data) => this.results = data);
-  }
+  getCategory(query:string){
 
+    this.dataservice.selectCategory(query).subscribe((data)=>{
+      this.results=data;
+    })
+  }
 }

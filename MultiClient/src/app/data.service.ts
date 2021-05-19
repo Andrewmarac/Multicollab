@@ -7,19 +7,18 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class DataService {
-
+  Url = `https://3000-rose-wolf-s9gzg0ab.ws-eu04.gitpod.io/`;
   constructor(private http: HttpClient) { }
-
-  displayInf() {
-    const url = `https://3000-gold-cricket-t2nt6t65.ws-eu04.gitpod.io/Influencer`;
-    let obsdata = this.http.get(url);
-    return obsdata;
+  getInfluencer() {
+      return this.http.get(this.Url + 'Influencer');
   }
 
-   selectCategorise(query: string) {
-    const url = `https://3000-gold-cricket-t2nt6t65.ws-eu04.gitpod.io/${query}`;
-
-    let obsdata = this.http.get(url);
-    return obsdata;
+  selectCategory(query: string) {
+    return this.http.get(this.Url +`${query}`);
   }
+
+  getAzienda(){
+    return this.http.get(this.Url+'Azienda');
+  }
+
 }
