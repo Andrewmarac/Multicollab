@@ -7,18 +7,5 @@ import { Observable } from 'rxjs';
   styleUrls: ['./influencer.component.css']
 })
 export class InfluencerComponent {
-  obsdata!: Observable<Object>;
-  results: any;
-  constructor(public dataservice: DataService) {}
 
-  submit(): void {
-
-    this.obsdata = this.dataservice.displayInf();
-    this.obsdata.subscribe((data) => this.results = data);
-  }
-
-  selcateg(query:string):void{
-    this.obsdata = this.dataservice.selectCategorise(query);
-    this.obsdata.subscribe((data) => this.results = data);
-  }
 }

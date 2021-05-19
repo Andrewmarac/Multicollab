@@ -1,0 +1,86 @@
+.grid-container{
+    display: grid;
+    grid-template-columns:0% 1fr 1fr 1fr 0%;
+    grid-template-rows:0% 1fr 1fr 0%;
+    height: 100%;
+
+    grid-column-gap: 15px;
+    grid-row-gap:15px;
+}
+
+
+.Sport{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+
+    border-bottom:7px solid #008CBA;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+}
+
+.Art{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+
+    border-bottom:7px solid #008CBA;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+}
+
+.Music{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: rgb(255, 255, 255);
+
+    border-bottom:7px solid #008CBA;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+}
+
+.Tech{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: rgb(255, 255, 255);
+
+    border-bottom:7px solid #008CBA;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    text-align: center;
+    padding: 10px;
+}
+
+.Food{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: rgb(255, 255, 255);
+
+    border-bottom:7px solid #008CBA;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+}
+
+
+.Fashion{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    background-color: rgb(255, 255, 255);
+
+    border-bottom:7px solid #008CBA;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding: 10px;
+}
+
+

@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { InfluencerComponent } from './influencer/influencer.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
+import { CategoryComponent } from './category/category.component';
+import { AssistenzaComponent } from './assistenza/assistenza.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InfluencerComponent,
-    AboutComponent
+    AboutComponent,
+    CategoryComponent,
+    AssistenzaComponent
   ],
   imports: [
     BrowserModule,
