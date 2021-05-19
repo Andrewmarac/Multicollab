@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutComponent } from './about/about.component';
 import { CategoryComponent } from './category/category.component';
 import { AssistenzaComponent } from './assistenza/assistenza.component';
+import { ListInfluencerComponent } from './list-influencer/list-influencer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AssistenzaComponent } from './assistenza/assistenza.component';
     InfluencerComponent,
     AboutComponent,
     CategoryComponent,
-    AssistenzaComponent
+    AssistenzaComponent,
+    ListInfluencerComponent
   ],
   imports: [
     BrowserModule,

@@ -31,15 +31,16 @@
 .lt h1{
   font-size: 20px;
 }
-.Intro{
+.Content{
   grid-column: 1/2;
   grid-row: 2/3;
   background-color: #f6f6f6;
   padding: 50px;
   border-radius: 25px;
+    overflow: auto;
 }
 
-.Content{
+.Intro{
   grid-column: 2/3;
   grid-row: 2/3;
 

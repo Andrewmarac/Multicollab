@@ -7,13 +7,13 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class DataService {
-  Url = `https://3000-rose-wolf-s9gzg0ab.ws-eu04.gitpod.io/`;
+  Url = `https://3000-apricot-panda-e446ww30.ws-eu04.gitpod.io/`;
   constructor(private http: HttpClient) { }
   getInfluencer() {
       return this.http.get(this.Url + 'Influencer');
   }
 
-  selectCategory(query: string) {
+  selectCategory(query: any) {
     return this.http.get(this.Url +`${query}`);
   }
 
