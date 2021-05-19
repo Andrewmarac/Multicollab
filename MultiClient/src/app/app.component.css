@@ -3,7 +3,7 @@
   grid-template-columns:70% 30%;
   grid-template-rows:5% 90% 5%;
   height: 1000px;
-  grid-row-gap: 10px;
+  grid-row-gap: 20px;
   grid-column-gap: 10px;
 }
 
@@ -37,7 +37,7 @@
   background-color: #f6f6f6;
   padding: 50px;
   border-radius: 25px;
-    overflow: auto;
+  overflow: auto;
 }
 
 .Intro{
@@ -48,6 +48,7 @@
   grid-template-columns:100%;
   grid-template-rows:70% 30%;
   border-radius: 25px;
+    grid-row-gap: 10px;
 }
 .Inf-section{
   grid-column: 1/2;
@@ -69,7 +70,8 @@
 .Az-section{
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: rgb(162, 201, 238);
+  background-color: #63a4ff;
+  background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
   padding: 20px;
   border-radius: 25px;
 
