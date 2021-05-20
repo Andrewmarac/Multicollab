@@ -7,7 +7,7 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class DataService {
-  Url = `https://3000-magenta-horse-fg158kxt.ws-eu04.gitpod.io/`;
+  Url = `https://3000-crimson-iguana-2z5m1rgf.ws-eu04.gitpod.io/`;
   constructor(private http: HttpClient) { }
   getInfluencer() {
       return this.http.get(this.Url + 'Influencer');
@@ -17,8 +17,8 @@ export class DataService {
     return this.http.get(this.Url +`${query}`);
   }
 
-  getAzienda(){
-    return this.http.get(this.Url+'Azienda');
+  getInfbyID(query: any){
+    return this.http.get(this.Url+'Influencer'+`${query}`);
   }
 
 }

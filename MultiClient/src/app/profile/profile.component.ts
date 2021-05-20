@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Observable } from 'rxjs';
+import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  results: any;
 
-  ngOnInit(): void {
-  }
+  constructor(public dataservice: DataService, private route: ActivatedRoute) { }
+    ngOnInit(): void {
+      this.route.paramMap.subscribe(this.getRouterParam);
+    }
 
+    getRouterParam = (params: ParamMap) =>
+    {
+      let p = params.get('id');
+      this.dataservice.getInfbyID(p).subscribe((data: any)=>{
+      this.results = data;
+      })
+    }
 }

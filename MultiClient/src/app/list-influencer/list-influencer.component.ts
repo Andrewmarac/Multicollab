@@ -13,8 +13,6 @@ export class ListInfluencerComponent  implements OnInit {
 
   constructor(public dataservice: DataService, private route: ActivatedRoute) { }
     ngOnInit(): void {
-    //Ottengo l'observable che notifica le informazioni sulla route attiva
-
       this.route.paramMap.subscribe(this.getRouterParam);
   }
 
