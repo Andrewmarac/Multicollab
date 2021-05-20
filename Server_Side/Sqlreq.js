@@ -23,58 +23,38 @@ module.exports = class Sqlreq {
     }
 
 
-    static makeSqlRequest(req, res) {
+    static getAllInfluencer(req, res) {
         let sqlRequest = new sql.Request(); 
         let q = 'select * from Influencer';
-        sqlRequest.query(q, (err, result) => {Sqlreq.sendQueryResults(err,result,res)}); 
-    }
-    
-  static sendQueryResults(err,result, res)
-    {
-        if (err) console.log(err); 
-        res.send(result.recordset);  
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendResult(err,result,res)}); 
     }
 
-    static makeAziendaRequest(req,res) {
+
+    static getAllBrand(req,res) {
         let sqlRequest = new sql.Request(); 
         let q = 'select * from Azienda';
-        sqlRequest.query(q, (err, result) => {Sqlreq.sendAziendaResult(err,result,res)}); 
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendResult(err,result,res)}); 
     }
 
 
-    static sendAziendaResult(err,result, res)
-    {
-            if (err) console.log(err); 
-            res.send(result.recordset); 
-    }
-
-     static ciVettRequest(req,res) {
+     static GetInfByCategory(req,res) {
         let sqlRequest = new sql.Request(); 
         let Category_ = req.params.Category_; 
         let q = `select * from Influencer WHERE Category_ = '${Category_}'`
-        sqlRequest.query(q, (err, result) => {Sqlreq.sendCiVettResult(err,result,res)}); 
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendResult(err,result,res)}); 
     }
 
-     static sendCiVettResult(err,result, res)
-    {
-        if (err) console.log(err); 
-        res.send(result.recordset); 
-    }
-
-
-
-
-
-    static ciIdRequest(req,res) {
+    static GetInfById(req,res) {
         let sqlRequest = new sql.Request(); 
         let Screen_Name = req.params.Screen_Name; 
         let q = `select * from Influencer WHERE Screen_Name = '${Screen_Name}'`
-        sqlRequest.query(q, (err, result) => {Sqlreq.sendIdResult(err,result,res)}); 
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendResult(err,result,res)}); 
     }
 
-     static sendIdResult(err,result, res)
+    static sendResult(err,result, res)
     {
         if (err) console.log(err); 
         res.send(result.recordset); 
     }
+
 }

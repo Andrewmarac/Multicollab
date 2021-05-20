@@ -6,19 +6,19 @@ app.use(new cors());
 const sqlreq = require('./Sqlreq.js'); 
 
 app.get('/Influencer', function (req, res) {
-   sqlreq.connect(req, res, sqlreq.makeSqlRequest);
+   sqlreq.connect(req, res, sqlreq.getAllInfluencer);
 });
 
 app.get('/Azienda', function (req, res) {
-    sqlreq.connect(req, res, sqlreq.makeAziendaRequest);
+    sqlreq.connect(req, res, sqlreq.getAllBrand);
  });
 
 app.get('/:Category_', function (req, res) {
-    sqlreq.connect(req, res, sqlreq.ciVettRequest);
+    sqlreq.connect(req, res, sqlreq.GetInfByCategory);
  });
 
-app.get('/:Screen_Name', function (req, res) {
-    sqlreq.connect(req, res, sqlreq.ciIdRequest);
+app.get('/Influencer/:Screen_Name', function (req, res) {
+    sqlreq.connect(req, res, sqlreq.GetInfById);
  });
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
