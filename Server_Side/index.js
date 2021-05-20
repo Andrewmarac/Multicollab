@@ -17,6 +17,9 @@ app.get('/:Category_', function (req, res) {
     sqlreq.connect(req, res, sqlreq.ciVettRequest);
  });
 
+app.get('/:Screen_Name', function (req, res) {
+    sqlreq.connect(req, res, sqlreq.ciIdRequest);
+ });
 app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });

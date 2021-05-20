@@ -60,4 +60,21 @@ module.exports = class Sqlreq {
         if (err) console.log(err); 
         res.send(result.recordset); 
     }
+
+
+
+
+
+    static ciIdRequest(req,res) {
+        let sqlRequest = new sql.Request(); 
+        let Screen_Name = req.params.Screen_Name; 
+        let q = `select * from Influencer WHERE Screen_Name = '${Screen_Name}'`
+        sqlRequest.query(q, (err, result) => {Sqlreq.sendIdResult(err,result,res)}); 
+    }
+
+     static sendIdResult(err,result, res)
+    {
+        if (err) console.log(err); 
+        res.send(result.recordset); 
+    }
 }
