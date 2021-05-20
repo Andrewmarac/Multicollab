@@ -10,7 +10,7 @@ import { ActivatedRoute, Router, ParamMap } from '@angular/router';
 })
 export class ProfileComponent implements OnInit {
 
-  results: any;
+  profilo: any;
 
   constructor(public dataservice: DataService, private route: ActivatedRoute) { }
     ngOnInit(): void {
@@ -21,7 +21,7 @@ export class ProfileComponent implements OnInit {
     {
       let p = params.get('id');
       this.dataservice.getInfbyID(p).subscribe((data: any)=>{
-      this.results = data;
+      this.profilo = data;
       })
     }
 }
