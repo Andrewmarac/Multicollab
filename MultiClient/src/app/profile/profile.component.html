@@ -1,4 +1,16 @@
       <h1>PROFILO</h1>
 <div *ngIf="profilo">
-      <p>{{profilo[0].Number_of_Followers}}</p>
+  <img src="{{profilo[0].Profile_image}}" alt="" width="200px">
+  <div class="Scritte">
+      <p><b>Numero Followers:</b>{{profilo[0].Number_of_Followers}}</p>
+      <p> <b>Nome:</b> {{profilo[0].Name_}} </p>
+       <p> <b>Posizione:</b> {{profilo[0].Location_}} </p>
+        <p> <b>Categoria:</b> {{profilo[0].Category_}} </p>
+<p>
+         <a href="{{profilo[0].Url_}}">#Sito</a>   </p>
+          <p> <b>Descrizione:</b> {{profilo[0].Description}} </p>
+          </div>
 </div>
+
+
+

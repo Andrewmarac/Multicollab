@@ -7,7 +7,7 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class DataService {
-  Url = `https://3000-peach-cobra-pk5n4il7.ws-eu04.gitpod.io/`;
+  Url = `https://3000-aquamarine-pig-qemtilr8.ws-eu04.gitpod.io/`;
   constructor(private http: HttpClient) { }
   getInfluencer() {
       return this.http.get(this.Url + 'Influencer');
