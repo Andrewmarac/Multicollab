@@ -8,7 +8,7 @@ import { ListInfluencerComponent } from './list-influencer/list-influencer.compo
 import { ProfileComponent } from './profile/profile.component';
 
 const routes: Routes = [
-    { path:'about',component:AboutComponent},
+    { path:'',component:AboutComponent},
     { path:'category',component:CategoryComponent},
     { path:'list-influencer/:id',component:ListInfluencerComponent},
     { path:'profile/:id',component:ProfileComponent},

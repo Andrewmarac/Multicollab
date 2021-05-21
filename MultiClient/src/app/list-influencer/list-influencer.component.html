@@ -9,7 +9,7 @@
               <div class="card-cont">
                 <p>Followers: {{r.Number_of_Followers}}</p>
                 <hr>
-                <img src="https://www.clipartmax.com/png/middle/296-2969961_no-image-user-profile-icon.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+                <img src="{{r.Profile_image}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
                 <p>CEO at Mighty Schools. Marketing and Advertising. Seeking a new job and new opportunities.</p><br>
               </div>
                   <a [routerLink] = "['/profile',r.Screen_Name]">#SeeProfile</a>

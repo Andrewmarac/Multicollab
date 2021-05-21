@@ -15,7 +15,7 @@
     grid-row: 2/3;
     background-color: rgb(255, 255, 255);
 
-    border-bottom:7px solid #008CBA;
+    border-bottom:5px solid #008CBA;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(44, 43, 43, 0.6), 0 6px 20px 0 rgba(70, 67, 67, 0.19);
     text-align: center;
@@ -27,7 +27,7 @@
     grid-row: 2/3;
     background-color: rgb(255, 255, 255);
 
-    border-bottom:7px solid #008CBA;
+    border-bottom:5px solid #008CBA;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
@@ -39,7 +39,7 @@
     grid-row: 2/3;
     background-color: rgb(255, 255, 255);
 
-    border-bottom:7px solid #008CBA;
+    border-bottom:5px solid #008CBA;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
@@ -51,7 +51,7 @@
     grid-row: 3/4;
     background-color: rgb(255, 255, 255);
 
-    border-bottom:7px solid #008CBA;
+    border-bottom:5px solid #008CBA;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -64,7 +64,7 @@
     grid-row: 3/4;
     background-color: rgb(255, 255, 255);
 
-    border-bottom:7px solid #008CBA;
+    border-bottom:5px solid #008CBA;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
@@ -77,7 +77,7 @@
     grid-row: 3/4;
     background-color: rgb(255, 255, 255);
 
-    border-bottom:7px solid #008CBA;
+    border-bottom:5px solid #008CBA;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
