@@ -1,1 +1,9 @@
-<p>search works!</p>
+<form>
+  <label for="fname">49?59?cicciogamer89?</label>
+    <input #newquery type="text">
+  <button (click)='findinf(newquery)'>search</button>
+</form>
+
+<div *ngIf="results">
+{{results[0].Name_}}
+  </div>
