@@ -6,9 +6,11 @@ import { AssistenzaComponent } from './assistenza/assistenza.component';
 import { ListInfluencerComponent } from './list-influencer/list-influencer.component';
 
 import { ProfileComponent } from './profile/profile.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
     { path:'',component:AboutComponent},
+    { path:'search',component:SearchComponent},
     { path:'category',component:CategoryComponent},
     { path:'list-influencer/:id',component:ListInfluencerComponent},
     { path:'profile/:id',component:ProfileComponent},

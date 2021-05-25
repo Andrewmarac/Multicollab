@@ -9,6 +9,7 @@ import { CategoryComponent } from './category/category.component';
 import { AssistenzaComponent } from './assistenza/assistenza.component';
 import { ListInfluencerComponent } from './list-influencer/list-influencer.component';
 import { ProfileComponent } from './profile/profile.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ProfileComponent } from './profile/profile.component';
     CategoryComponent,
     AssistenzaComponent,
     ListInfluencerComponent,
-    ProfileComponent
+    ProfileComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
